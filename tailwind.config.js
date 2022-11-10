@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        preto: "#464646",
+      },
+    },
     fontFamily: {
       raleway: ["Raleway", "sans-serif"],
     },
