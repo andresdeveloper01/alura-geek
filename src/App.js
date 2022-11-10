@@ -1,9 +1,12 @@
+import { ProductsContextProvider } from "./context/ProductsContext";
 import Home from "./pages/Home";
 
 function App() {
   return (
     <>
-      <Home />
+      <ProductsContextProvider>
+        <Home />
+      </ProductsContextProvider>
     </>
   );
 }

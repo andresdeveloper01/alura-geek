@@ -1,7 +1,13 @@
+import { useContext } from "react";
+import { ProductsContext } from "../../context/ProductsContext";
+import { ListOfStarWars } from "./StarWars/ListOfStarWars";
+
 const ListOfProducts = () => {
+  const { state, starWars, consolas, diversos } = useContext(ProductsContext);
+
   return (
     <main>
-      <h3>Star Wars</h3>
+      <ListOfStarWars state={starWars} name="Star Wars" />
     </main>
   );
 };

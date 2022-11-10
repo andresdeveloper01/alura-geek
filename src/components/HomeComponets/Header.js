@@ -27,7 +27,7 @@ const Header = () => {
         className="  h-80 bg-cover bg-no-repeat text-white"
       >
         <div className="my-0 mx-auto flex h-full w-3/4 flex-col items-start justify-end gap-4 p-8">
-          <h2 className="text-5xl font-bold">Febrero Promocional</h2>
+          <h2 className="text-5xl font-bold">Diciembre Promocional</h2>
           <p className="text-xl font-bold">
             Productos seleccionados con 33% de descuento
           </p>
