@@ -1,7 +1,9 @@
-const CardStarWars = ({ name, id, img, price }) => {
+import React from "react";
+
+const CardDiversos = ({ name, id, img, price }) => {
   return (
     <div
-      className="scale-y-100 rounded-md bg-white shadow-lg shadow-zinc-400  duration-700 ease-in-out  hover:scale-110 hover:cursor-pointer hover:duration-500 hover:ease-in-out max-[870px]:w-40"
+      className="scale-y-100 rounded-md bg-white shadow-lg shadow-zinc-400 duration-700 ease-in-out  hover:scale-110 hover:cursor-pointer hover:duration-500 hover:ease-in-out max-[870px]:w-40"
       id={id}
     >
       <img className="rounded-md" src={img} alt="" />
@@ -16,4 +18,4 @@ const CardStarWars = ({ name, id, img, price }) => {
   );
 };
 
-export default CardStarWars;
+export default CardDiversos;

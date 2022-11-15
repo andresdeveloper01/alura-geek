@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         preto: "#464646",
+        preto3: "#EAF2FD",
       },
     },
     fontFamily: {

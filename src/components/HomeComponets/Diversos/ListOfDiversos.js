@@ -1,7 +1,8 @@
-import CardStarWars from "./CardStarWars";
+import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import CardDiversos from "./CardDiversos";
 
-export const ListOfStarWars = ({ state, name }) => {
+const ListOfDiversos = ({ state, name }) => {
   return (
     <>
       {state && (
@@ -17,7 +18,7 @@ export const ListOfStarWars = ({ state, name }) => {
           </div>
           <div className="flex gap-4 max-[870px]:flex-wrap max-[752px]:justify-center">
             {state.map(({ name, id, img, price }) => (
-              <CardStarWars key={id} price={price} name={name} img={img} />
+              <CardDiversos key={id} price={price} name={name} img={img} />
             ))}
           </div>
         </section>
@@ -25,3 +26,5 @@ export const ListOfStarWars = ({ state, name }) => {
     </>
   );
 };
+
+export default ListOfDiversos;
