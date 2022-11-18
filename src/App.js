@@ -1,13 +1,14 @@
+import { HashRouter } from "react-router-dom";
+import AluraGeekRoutes from "./components/AluraGeekRoutes";
 import { ProductsContextProvider } from "./context/ProductsContext";
-import Home from "./pages/Home";
 
 function App() {
   return (
-    <>
+    <HashRouter>
       <ProductsContextProvider>
-        <Home />
+        <AluraGeekRoutes />
       </ProductsContextProvider>
-    </>
+    </HashRouter>
   );
 }
 
