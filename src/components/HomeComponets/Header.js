@@ -2,11 +2,12 @@ import logo from "../../assets/logo.svg";
 import { AiOutlineSearch } from "react-icons/ai";
 import { useContext, useState } from "react";
 import { ProductsContext } from "../../context/ProductsContext";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const { state } = useContext(ProductsContext);
-
   const [busqueda, setBusqueda] = useState("");
   const [products, setProducts] = useState([]);
 
@@ -20,6 +21,7 @@ const Header = () => {
     if ((window.location.href = "/#/search")) {
       window.location.reload();
     }
+    navigate("/search");
   };
 
   const filtrar = (terminoBusqueda) => {
@@ -63,15 +65,16 @@ const Header = () => {
               className="h-10 w-96 rounded-3xl  bg-neutral-100 p-3 outline-none max-[870px]:w-64 max-[550px]:hidden"
             />
             <button type="submit">
-              <Link to="/search">
-                <AiOutlineSearch className="relative right-8 h-5 w-5  text-slate-400 max-[550px]:right-0" />
-              </Link>
+              <AiOutlineSearch className="relative right-8 h-5 w-5  text-slate-400 max-[550px]:right-0" />
             </button>
           </form>
         </div>
-        <button className="w-44 border border-solid border-blue-500 p-3 text-blue-500 max-[870px]:w-32  max-[870px]:p-2 max-[370px]:w-24 max-[370px]:text-[14px]">
-          Login
-        </button>
+
+        <Link to="/login">
+          <button className="w-44 border border-solid border-blue-500 p-3 text-blue-500 max-[870px]:w-32  max-[870px]:p-2 max-[370px]:w-24 max-[370px]:text-[14px]">
+            Login
+          </button>
+        </Link>
       </div>
     </header>
   );

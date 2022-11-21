@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import CardDiversos from "./CardDiversos";
 
 const ListOfDiversos = ({ state, name }) => {
@@ -12,7 +13,7 @@ const ListOfDiversos = ({ state, name }) => {
               {name}
             </h2>
             <div className="flex items-center gap-1 font-bold text-blue-500">
-              <a href="/">Ver todo</a>
+              <Link to="/diversos">Ver todo</Link>
               <FaArrowRight className="cursor-pointer" />
             </div>
           </div>

@@ -1,4 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import CardConsolas from "./CardConsolas";
 
 const ListOfConsolas = ({ state, name }) => {
@@ -11,7 +12,7 @@ const ListOfConsolas = ({ state, name }) => {
               {name}
             </h2>
             <div className="flex items-center gap-1 font-bold text-blue-500">
-              <a href="/">Ver todo</a>
+              <Link to="/consolas">Ver todo</Link>
               <FaArrowRight className="cursor-pointer" />
             </div>
           </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 
 const Footer = () => {
@@ -5,12 +6,12 @@ const Footer = () => {
     <footer>
       <div className=" bg-preto3 p-16	max-[600px]:p-4">
         <div className=" mx-auto  my-0 grid max-w-[1140px] grid-cols-[200px_300px_auto] grid-rows-[1fr] gap-4 max-lg:grid-cols-[200px_180px_auto] max-[600px]:grid-cols-1">
-          <a
+          <Link
             className="grid max-[870px]:col-start-1 max-[600px]:col-end-4 max-[600px]:justify-center"
-            href="/"
+            to="/"
           >
             <img src={logo} alt="Logo Alura Geek" />
-          </a>
+          </Link>
 
           <div className="flex flex-col gap-4 font-medium max-[870px]:col-start-1 max-[600px]:col-end-4 max-[600px]:items-center">
             <a href="/">Quienes somos</a>

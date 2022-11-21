@@ -2,6 +2,7 @@ import Footer from "../components/HomeComponets/Footer";
 import hero from "../assets/hero.png";
 import Header from "../components/HomeComponets/Header";
 import ListOfProducts from "../components/HomeComponets/ListOfProducts";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -21,9 +22,9 @@ const Home = () => {
           <p className="text-xl font-bold max-[600px]:text-sm">
             Productos seleccionados con 33% de descuento
           </p>
-          <button className="bg-blue-500 p-3 max-[870px]:text-xs">
+          <Link to="consolas" className="bg-blue-500 p-3 max-[870px]:text-xs">
             Ver Consolas
-          </button>
+          </Link>
         </div>
       </div>
       <ListOfProducts />

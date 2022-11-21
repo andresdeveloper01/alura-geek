@@ -1,5 +1,6 @@
 import CardStarWars from "./CardStarWars";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const ListOfStarWars = ({ state, name }) => {
   return (
@@ -11,7 +12,7 @@ export const ListOfStarWars = ({ state, name }) => {
               {name}
             </h2>
             <div className="flex items-center gap-1 font-bold text-blue-500">
-              <a href="/">Ver todo</a>
+              <Link to="/starwars">Ver todo</Link>
               <FaArrowRight className="cursor-pointer" />
             </div>
           </div>
