@@ -19,7 +19,13 @@ const ListOfDiversos = ({ state, name }) => {
           </div>
           <div className="flex gap-4 max-[870px]:flex-wrap max-[752px]:justify-center">
             {state.map(({ name, id, img, price }) => (
-              <CardDiversos key={id} price={price} name={name} img={img} />
+              <CardDiversos
+                key={id}
+                price={price}
+                name={name}
+                img={img}
+                id={id}
+              />
             ))}
           </div>
         </section>

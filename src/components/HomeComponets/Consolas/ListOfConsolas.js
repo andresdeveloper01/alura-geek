@@ -18,7 +18,13 @@ const ListOfConsolas = ({ state, name }) => {
           </div>
           <div className="flex gap-4 max-[870px]:flex-wrap max-[752px]:justify-center">
             {state.map(({ name, id, img, price }) => (
-              <CardConsolas key={id} price={price} name={name} img={img} />
+              <CardConsolas
+                key={id}
+                price={price}
+                name={name}
+                img={img}
+                id={id}
+              />
             ))}
           </div>
         </section>

@@ -22,35 +22,21 @@ const Footer = () => {
             <a href="/">Anúncie aquí</a>
           </div>
           <div className="max-[870px]:col-start-2 max-[870px]:col-end-4 max-[870px]:row-start-1 max-[870px]:row-end-3 max-[600px]:col-start-1 max-[600px]:row-auto">
-            <form action="">
+            <form action="https://formsubmit.co/yucoec@gmail.com" method="POST">
               <fieldset>
                 <legend className="mb-2 font-bold">Hable con nosotros</legend>
-                <div className="relative mb-4">
-                  <label
-                    htmlFor="name"
-                    className="absolute top-4 left-3.5 text-zinc-400"
-                  >
-                    Nombre
-                  </label>
-                  <input
-                    name="name"
-                    type="text"
-                    className="w-full rounded-md border-b-2 border-neutral-100  px-3 pt-4 pb-3.5 shadow-xl outline-none"
-                  />
-                </div>
-                <div className="relative mb-4">
-                  <label
-                    htmlFor="message"
-                    className="absolute top-4 left-3.5 text-zinc-400 "
-                  >
-                    Escribe tu mensaje
-                  </label>
-                  <textarea
-                    name="message"
-                    type="text"
-                    className="w-full resize-none rounded-md border-b-2 border-neutral-100 px-3 pt-4 pb-3.5 shadow-xl outline-none"
-                  ></textarea>
-                </div>
+                <input
+                  name="name"
+                  type="text"
+                  placeholder="Nombre"
+                  className="mb-4 w-full rounded-md border-b-2  border-neutral-100 px-3 pt-4 pb-3.5 shadow-xl outline-none"
+                />
+                <textarea
+                  name="message"
+                  type="text"
+                  placeholder="Escriba su mensaje"
+                  className="w-full resize-none rounded-md border-b-2 border-neutral-100 px-3 pt-4 pb-3.5 shadow-xl outline-none"
+                ></textarea>
               </fieldset>
               <button className="bg-blue-500 p-3 text-white max-[870px]:text-sm">
                 Enviar mensaje

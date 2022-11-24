@@ -1,0 +1,20 @@
+[
+  {
+    "name": "react",
+    "email": "reactjs@alurageek.la",
+    "password": "tcser",
+    "id": "01"
+  },
+  {
+    "name": "sass",
+    "email": "scss@alurageek.la",
+    "password": "ssas",
+    "id": "02"
+  },
+  {
+    "name": "git",
+    "email": "git@alurageek.la",
+    "password": "tig",
+    "id": "03"
+  }
+]

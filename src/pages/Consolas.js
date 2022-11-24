@@ -15,7 +15,7 @@ const Consolas = () => {
 
       <div className="flex justify-center gap-4 p-7 max-[870px]:flex-wrap">
         {consolas.map(({ name, id, img, price }) => (
-          <CardConsolas key={id} price={price} name={name} img={img} />
+          <CardConsolas key={id} price={price} name={name} img={img} id={id} />
         ))}
       </div>
       <Footer />

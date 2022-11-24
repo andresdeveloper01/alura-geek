@@ -2,11 +2,10 @@ import logo from "../../assets/logo.svg";
 import { AiOutlineSearch } from "react-icons/ai";
 import { useContext, useState } from "react";
 import { ProductsContext } from "../../context/ProductsContext";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const navigate = useNavigate();
-  const location = useLocation();
   const { state } = useContext(ProductsContext);
   const [busqueda, setBusqueda] = useState("");
   const [products, setProducts] = useState([]);

@@ -16,7 +16,7 @@ const StarWars = () => {
 
       <div className="flex justify-center gap-4 p-7 max-[870px]:flex-wrap">
         {starWars.map(({ name, id, img, price }) => (
-          <CardStarWars key={id} price={price} name={name} img={img} />
+          <CardStarWars key={id} price={price} name={name} img={img} id={id} />
         ))}
       </div>
       <Footer />

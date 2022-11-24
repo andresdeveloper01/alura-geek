@@ -3,6 +3,7 @@ import Consolas from "../pages/Consolas";
 import Diversos from "../pages/Diversos";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
+import Productos from "../pages/Productos";
 import Search from "../pages/Search";
 import StarWars from "../pages/StarWars";
 
@@ -15,6 +16,7 @@ const AluraGeekRoutes = () => {
       <Route path="/starwars" element={<StarWars />} />
       <Route path="/consolas" element={<Consolas />} />
       <Route path="/diversos" element={<Diversos />} />
+      <Route path="/products:id" element={<Productos />} />
     </Routes>
   );
 };

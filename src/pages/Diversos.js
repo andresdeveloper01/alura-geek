@@ -16,7 +16,7 @@ const Diversos = () => {
 
       <div className="flex justify-center gap-4 p-7 max-[870px]:flex-wrap">
         {diversos.map(({ name, id, img, price }) => (
-          <CardDiversos key={id} price={price} name={name} img={img} />
+          <CardDiversos key={id} price={price} name={name} img={img} id={id} />
         ))}
       </div>
       <Footer />
