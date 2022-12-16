@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const SearchProducts = ({ name, id, img, price }) => {
   return (
     <div
@@ -8,9 +10,12 @@ const SearchProducts = ({ name, id, img, price }) => {
       <div className="p-2">
         <h3 className="max-[690px]:text-sm">{name}</h3>
         <p className="font-bold">$ {price}</p>
-        <a href="/" className="font-bold text-blue-500 max-[690px]:text-sm">
+        <Link
+          to={`/products${id}`}
+          className="font-bold text-blue-500 max-[690px]:text-sm"
+        >
           Ver producto
-        </a>
+        </Link>
       </div>
     </div>
   );

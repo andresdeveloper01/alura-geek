@@ -15,7 +15,13 @@ const Search = () => {
           </p>
         ) : (
           searchProducts.map(({ name, id, img, price }) => (
-            <SearchProducts name={name} key={id} img={img} price={price} />
+            <SearchProducts
+              name={name}
+              key={id}
+              img={img}
+              price={price}
+              id={id}
+            />
           ))
         )}
       </div>

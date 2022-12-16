@@ -23,6 +23,8 @@ const Header = () => {
     navigate("/search");
   };
 
+  const login = JSON.parse(localStorage.getItem("on"));
+
   const filtrar = (terminoBusqueda) => {
     // eslint-disable-next-line array-callback-return
     let resultadoBusqueda = state.products.filter((res) => {
@@ -38,7 +40,6 @@ const Header = () => {
     setProducts(resultadoBusqueda);
     return resultadoBusqueda;
   };
-
   return (
     <header>
       <div className="mx-auto my-0 flex max-w-[1200px] items-center justify-between p-8 max-[870px]:p-6 max-[550px]:justify-evenly max-[550px]:px-2  max-[370px]:justify-start max-[370px]:gap-5">
@@ -69,11 +70,19 @@ const Header = () => {
           </form>
         </div>
 
-        <Link to="/login">
-          <button className="w-44 border border-solid border-blue-500 p-3 text-blue-500 max-[870px]:w-32  max-[870px]:p-2 max-[370px]:w-24 max-[370px]:text-[14px]">
-            Login
-          </button>
-        </Link>
+        {login === true ? (
+          <Link to="/admin">
+            <button className="w-44 border border-solid border-blue-500 p-3 text-blue-500 max-[870px]:w-32  max-[870px]:p-2 max-[370px]:w-24 max-[370px]:text-[14px]">
+              Admin
+            </button>
+          </Link>
+        ) : (
+          <Link to="/login">
+            <button className="w-44 border border-solid border-blue-500 p-3 text-blue-500 max-[870px]:w-32  max-[870px]:p-2 max-[370px]:w-24 max-[370px]:text-[14px]">
+              Login
+            </button>
+          </Link>
+        )}
       </div>
     </header>
   );
