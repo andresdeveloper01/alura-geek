@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Footer from "../components/HomeComponets/Footer";
 import Header from "../components/HomeComponets/Header";
-import user from "../users.json";
+import users from "../users.json";
 
 const initialForm = {
   email: "",
