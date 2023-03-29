@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# Alura Geek
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Pagina e-commerce para [Alura Latam](https://www.aluracursos.com/)
 
-## Available Scripts
+## Descripción
 
-In the project directory, you can run:
+Home con lista de productos, incluye buscador de productos, un login para ingresar y el
 
 ### `npm start`
 
