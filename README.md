@@ -10,6 +10,7 @@ Detalles de cada producto y una ruta de cada categoria.
 ### Screenshots
 
 ![Home](./photos/Captura de pantalla 2023-03-25 094129.png)
+
 ![Detalles](./photos/Captura de pantalla 2023-04-04 093513.png)
 
 ### Link to page 
