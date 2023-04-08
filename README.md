@@ -15,7 +15,7 @@ Detalles de cada producto y una ruta de cada categoria.
 
 ### Link to page 
 
-- Site URL: [Alura_Geek](https://alurageek-e-commerce.netlify.app/)
+- Site URL: [Alura Geek](https://alurageek-e-commerce.netlify.app/)
 
 ## My process
 
