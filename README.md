@@ -9,9 +9,9 @@ Detalles de cada producto y una ruta de cada categoria.
 
 ### Screenshots
 
-![Home](./photos/Captura de pantalla 2023-03-25 094129.png)
+![Home](./photos/Captura%20de%20pantalla%202023-03-25%20094129.png)
 
-![Detalles](./photos/Captura de pantalla 2023-04-04 093513.png)
+![Detalles](./photos/Captura%20de%20pantalla%202023-04-04%20093513.png)
 
 ### Link to page 
 
