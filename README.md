@@ -24,6 +24,5 @@ Detalles de cada producto y una ruta de cada categoria.
 - React
 - React Router DOM
 - React Icons
-- React PLayer
 - Tailwind CSS
 - Flexbox
